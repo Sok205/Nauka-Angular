@@ -1,0 +1,6 @@
+<div class="search-div" [ngClass]="{changeBackground: SearchValue != ''} ">
+    <span><b>Search:</b></span>
+    <!-- NgModel pozwala na zaimplementowanie dwu stronnego łączenia danych -->
+    <input type="text"[(ngModel)]="SearchValue">
+    <span *ngIf="SearchValue != ''">You searched for "{{ SearchValue }}"</span>
+</div>

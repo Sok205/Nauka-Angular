@@ -7,16 +7,20 @@ import { ContainerComponent } from './Container/container.component'; //importuj
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component'; 
 import { NotificationComponent } from './notification/notification.component';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { ToppingsComponent } from './toppings/toppings.component'; //Pizwala na implementacje ngModel
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent, //deklaruje container
-    NavComponent, HeaderComponent, NotificationComponent
+    NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ToppingsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
